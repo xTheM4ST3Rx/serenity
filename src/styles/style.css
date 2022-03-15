@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #000000;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.backgroundTop{
+background-image: linear-gradient(to bottom ,transparent 25%, #000000 90%), url("../resources/jsjs.jpg");
+background-size: cover;
+background-position:top;
+background-repeat: no-repeat;
+width: 100%;
+height: 85vh;
+position: absolute;
+top: 0;
+z-index: -1;
+opacity: 1;
+}
+
+
+
+
+.profileBg{
+  margin-left: 50px;
+  color: white;
+  position: absolute;
+  top: 200px;
+  background-color: #000000ca;
+  box-shadow: 5px 5px 15px 5px #000000; 
+}
+.profileItens{
+  display: flex;
+  align-items: center;
+}
+.profileImg{
+box-shadow: 5px 5px 15px 5px #000000; 
+transform: scaleX(-1);
+width: 100px;
+}
+.profileText{
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#imgPresentation{
+  transform: scaleX(-1);
+  box-shadow: 1px 1px 5px 1px #5caec0c5; 
+}
+
+
+
+
+#navbar {
+  display: flex;
+  color: white;
+  padding-left: 50px;
+  
+  box-shadow: 5px 5px 15px 5px #000000; 
+  background-color: #5caec0da;
+}
+#navbar .nav-link{
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
