@@ -5,8 +5,7 @@ export function Design(){
     
     <Navbar/>
 
-    
-
+  
        <div className="container">   
    
     <div className="default-row">
