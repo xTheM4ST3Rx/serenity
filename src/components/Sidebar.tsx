@@ -13,23 +13,29 @@ export function Sidebar(){
     }
 
     function acord(arr:ObjectsItens){
-
         if(arr.menu !== isMenu.isTab){
           setIMenu({...isMenu, isActive:  true, isTab: arr.menu})
         }else{
            setIMenu({...isMenu, isActive: !arr.active, isTab: arr.menu})
         }
     }
+    
+
+   
+
+
+
 
    return(<>
         <div id="SideBar">
 
-            <div className="side-logo">
-                <div><img src={Logo} alt="Logo"width={"50px"}/></div> 
-                <div>SerenityDesgin</div> 
-            </div> 
-            
-          
+     
+
+         <div className="side-logo">
+            <div><img src={Logo} alt="Logo"width={"50px"}/></div> 
+            <div>SerenityDesgin</div> 
+          </div> 
+               
         <div className={`accordion ${isMenu.isActive == true && isMenu.isTab == 1?"active":""}`}>
             <button onClick={() => acord({active:isMenu.isActive, menu:1,})}>Components</button>
             <div className={`ac-panel`}>

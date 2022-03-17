@@ -4,16 +4,14 @@ import {
   Route
 } from "react-router-dom";
 
-import { Home } from "./pages/Home";
-import { Layout } from "./pages/Layout";
+import { Dashboard } from "./pages/Dashboard";
 
 
 export function AppRoutes() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/layout" element={<Layout/>}/>
+          <Route path="/" element={<Dashboard/>}/>
         </Routes>
     </Router>
   );

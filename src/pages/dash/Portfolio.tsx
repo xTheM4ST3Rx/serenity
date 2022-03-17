@@ -1,34 +1,38 @@
 
-import Profile from "../resources/profile.jpg";
-import Nuvem from "../resources/nuvem.jpg";
-import Wssocket from "../resources/wss.png";
-import { Sidebar } from "../components/Sidebar";
-
-//import { Welcome } from "../components/Welcome";
+import Profile from "../../resources/profile.jpg";
+import Nuvem from "../../resources/nuvem.jpg";
+import Wssocket from "../../resources/wss.png";
+import DiscordLogo from "../../resources/discord.svg";
 
 
-export function Home(){
+export function Portfolio(){
    return(
-    <div className="row">
-      <div className="col-auto">
+    <div>
     
-       <Sidebar/>
-       </div>
-       <div className="col h-100-scroller">
-    
-       <div className="container">
-       <div className="row p-3 mx-0 my-5">
-          <div className="col-auto text-center">
+       <div className="container my-10">
+       <div className="row p-3 mx-0 my-5 l text-center">
+          <div className="col">
                 <img id="imgPresentation" src={Profile} alt="profile" width="200px" className="rd-100"/>
                 <div><strong>FullStack Developer</strong></div>
                 <div className="mt-2">Edinan C. Morais</div>
                 <div>24 Anos</div>
                 <div className="mt-3">"Olá Bem vindo(a) ao meu perfil"</div>
          </div>
+         <div className="col align-self-center">
+           <h1>Projects</h1>
+           <h1>4</h1>
+
+           </div>
+           <div className="col align-self-center">
+           <h1>Repositories</h1>
+           <h1>8</h1>
+
+           </div>
+
         </div>
       </div>
        
-       <div className="container my-5">
+       <div className="container my-10">
 
         <div className="row p-3 mx-0 my-5">
           <div className="col">
@@ -88,7 +92,7 @@ export function Home(){
 
 
 
-<div className="container">
+<div className="container my-10">
         <div className="row p-3 mx-0 mt-5">
           <div className="col align-self-center">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Comunicação RealTime</div>
@@ -103,7 +107,7 @@ export function Home(){
                </div>
                </div>
 
-              <div className="col">
+              <div className="col p-4">
         
                  <img src={Wssocket} alt="" className="img-fluid" style={{borderRadius:10}}/>
               
@@ -115,9 +119,9 @@ export function Home(){
 
               
 
-    <div className="container">
+    <div className="container my-10">
         <div className="row p-3 mx-0 my-5">
-        <div className="col">
+        <div className="col p-4">
         <img src={Nuvem} alt="" className="img-fluid" style={{borderRadius:10}}/>
               
                </div>
@@ -143,7 +147,7 @@ export function Home(){
                </div>
     
                
-               <div className="container">
+               <div className="container my-10">
         <div className="row p-3 mx-0 my-5">
           <div className="col align-self-center">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Sistemas de Pagamentos</div>
@@ -161,14 +165,14 @@ export function Home(){
                </div>
                </div>
 
-              <div className="col">
+              <div className="col p-4">
                  <img src=" https://files.readme.io/73d82c9-cobranca_recorrente_1.jpg" alt="" className="img-fluid" style={{borderRadius:10}}/>
                </div>
                </div>
                </div>
 
          
-               <div className="container">
+               <div className="container my-10">
         <div className="row p-3 mx-0 my-5">
           <div className="col">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Contato</div>
@@ -178,7 +182,9 @@ export function Home(){
                <div>Phone: +55 11 975909929</div>
                </div>
             </div>
-            
+            <div className="col">
+          <img src={DiscordLogo} alt=""/>
+            </div>
                </div>
               </div>
 
@@ -186,5 +192,5 @@ export function Home(){
 
 
 
-              </div> </div>) 
+              </div>) 
 }

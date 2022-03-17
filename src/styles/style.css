@@ -8,8 +8,7 @@ body {
   color: white;
   background-color: #000000;
   background-attachment: fixed;
-  background-size: cover;
-  background-image: linear-gradient(to bottom ,transparent , #000000 45%), url("../resources/jsjs.jpg");
+  background-image: linear-gradient(to bottom ,transparent , #000000 20%), url("../resources/jsjs.jpg");
   background-size: cover;
   background-position:top;
   background-repeat: no-repeat;
@@ -47,7 +46,7 @@ width: 100px;
 
 
 
-#SideBar {
+#SideBar{
   max-width: 300px;
   color: white;
   padding-left: 25px;  
@@ -56,21 +55,32 @@ width: 100px;
   background-color: #242424;
   height: 100vh;
 }
+
+
+
+
+
+
 #SideBar .side-logo{
   text-shadow: 1px 1px 2px black;
   font-weight: bolder;
   font-size: 25px;
   display: flex;
   align-items: center;
-  
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-.h-100-scroller{
-  overflow: auto;
-  height: 100vh;
+.sidebar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
 }
+
+
+
 
 
 

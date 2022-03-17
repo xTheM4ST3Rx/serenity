@@ -1,13 +1,8 @@
-import { Sidebar } from "../components/Sidebar";
+
 
 export function Layout(){
    return(
-    <div className="row">
-    <div className="col-auto">
-  
-       <Sidebar/>
-       </div>
-       <div className="col">
+    <div>
        <div className="container">   
    
     <div className="default-row">
@@ -40,5 +35,5 @@ export function Layout(){
 
           
 
-</div></div>) 
+</div>) 
 }
