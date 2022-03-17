@@ -21,15 +21,11 @@ export function Sidebar(){
     }
     
 
-   
-
-
 
 
    return(<>
         <div id="SideBar">
 
-     
 
          <div className="side-logo">
             <div><img src={Logo} alt="Logo"width={"50px"}/></div> 
