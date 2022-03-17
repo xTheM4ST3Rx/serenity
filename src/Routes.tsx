@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import { Design } from "./pages/Desgin";
+import { Layout } from "./pages/Layout";
 
 
 export function AppRoutes() {
@@ -13,7 +13,7 @@ export function AppRoutes() {
     <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/design" element={<Design/>}/>
+          <Route path="/layout" element={<Layout/>}/>
         </Routes>
     </Router>
   );

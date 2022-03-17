@@ -59,15 +59,15 @@ width: 100px;
 
 
 
-#navbar {
-  display: flex;
+#SideBar {
+  max-width: 300px;
   color: white;
   padding-left: 50px;
   
   box-shadow: 5px 5px 15px 5px #000000; 
   background-color: #5caec0da;
 }
-#navbar .nav-link{
+#SideBar .nav-link{
   padding: 10px;
   font-weight: 600;
   font-size: 20px;

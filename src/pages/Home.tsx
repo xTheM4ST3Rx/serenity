@@ -1,7 +1,9 @@
-import { Navbar } from "../components/Navbar";
+
 import Profile from "../resources/profile.jpg";
 import Nuvem from "../resources/nuvem.jpg";
 import Wssocket from "../resources/wss.png";
+import { Sidebar } from "../components/SideBar";
+
 //import { Welcome } from "../components/Welcome";
 
 
@@ -11,7 +13,7 @@ export function Home(){
 
      
 
-       <div><Navbar/></div>
+       <div><Sidebar/></div>
        <div className="backgroundTop"></div>
     
        <div className="container">

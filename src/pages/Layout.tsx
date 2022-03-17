@@ -1,11 +1,8 @@
-import { Navbar } from "../components/Navbar";
+import { Sidebar } from "../components/SideBar";
 
-export function Design(){
+export function Layout(){
    return(<>
-    
-    <Navbar/>
-
-  
+       <div><Sidebar/></div>
        <div className="container">   
    
     <div className="default-row">
@@ -18,7 +15,7 @@ export function Design(){
           </div>
           </div>
 
-    
+  
     <div className="default-row">
     <h3>Examplo 2:</h3>
           <div className="row">
