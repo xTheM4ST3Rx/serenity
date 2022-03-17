@@ -9,22 +9,11 @@ body {
   background-color: #000000;
   background-attachment: fixed;
   background-size: cover;
+  background-image: linear-gradient(to bottom ,transparent , #000000 45%), url("../resources/jsjs.jpg");
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
 }
-
-
-.backgroundTop{
-background-image: linear-gradient(to bottom ,transparent 25%, #000000 90%), url("../resources/jsjs.jpg");
-background-size: cover;
-background-position:top;
-background-repeat: no-repeat;
-width: 100%;
-height: 85vh;
-position: absolute;
-top: 0;
-z-index: -1;
-opacity: 1;
-}
-
 
 
 
@@ -50,10 +39,9 @@ width: 100px;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 #imgPresentation{
   transform: scaleX(-1);
-  box-shadow: 1px 1px 5px 1px #5caec0c5; 
+  box-shadow: 1px 1px 5px 1px #f7f8f754; 
 }
 
 
@@ -62,21 +50,72 @@ width: 100px;
 #SideBar {
   max-width: 300px;
   color: white;
-  padding-left: 50px;
+  padding-left: 25px;  
+  padding-right: 25px; 
+  box-shadow: 1px 1px 7px 1px #f7f8f754; 
+  background-color: #242424;
+  height: 100vh;
+}
+#SideBar .side-logo{
+  text-shadow: 1px 1px 2px black;
+  font-weight: bolder;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
   
-  box-shadow: 5px 5px 15px 5px #000000; 
-  background-color: #5caec0da;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-#SideBar .nav-link{
-  padding: 10px;
-  font-weight: 600;
-  font-size: 20px;
+
+.h-100-scroller{
+  overflow: auto;
+  height: 100vh;
+}
+
+
+
+
+
+/*///accordion///*/
+
+.accordion button {
+  background-color: transparent;
+  color: white;
   cursor: pointer;
+  width: 300px;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom:1px solid #f7f8f754 ;
+}
+
+.active  .ac-panel {
+  display: block !important;
 }
 
 
 
-
+.accordion button:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active button:after {
+  content: "\2212";
+}
+.ac-panel {
+  padding: 0 5px;
+  display: none;
+  overflow: hidden;
+}
+.ac-panel .ac-item {
+  margin: 20px 15px;
+}
 
 
 

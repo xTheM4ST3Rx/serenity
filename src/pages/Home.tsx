@@ -2,19 +2,19 @@
 import Profile from "../resources/profile.jpg";
 import Nuvem from "../resources/nuvem.jpg";
 import Wssocket from "../resources/wss.png";
-import { Sidebar } from "../components/SideBar";
+import { Sidebar } from "../components/Sidebar";
 
 //import { Welcome } from "../components/Welcome";
 
 
 export function Home(){
-   return(<>
+   return(
+    <div className="row">
+      <div className="col-auto">
     
-
-     
-
-       <div><Sidebar/></div>
-       <div className="backgroundTop"></div>
+       <Sidebar/>
+       </div>
+       <div className="col h-100-scroller">
     
        <div className="container">
        <div className="row p-3 mx-0 my-5">
@@ -33,7 +33,7 @@ export function Home(){
         <div className="row p-3 mx-0 my-5">
           <div className="col">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Front-End</div>
-              <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+              <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
               <div className="mt-3">
                <div>Html</div>
                <div>Css</div>
@@ -45,7 +45,7 @@ export function Home(){
             </div>
               <div className="col">
                 <div style={{fontWeight:'bold', fontSize:"25px",color:"white"}}>Back-End</div>
-                <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+                <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                 <div className="mt-3">
                  <div>Nodejs</div>
                  <div>PHP</div>
@@ -57,7 +57,7 @@ export function Home(){
                </div>
                <div className="col">
                 <div style={{fontWeight:'bold', fontSize:"25px",color:"white"}}>Versionamento</div>
-                <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+                <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                 <div className="mt-3">
                  <div>GitHub</div>
                  <div>Bitbucket</div>
@@ -66,14 +66,14 @@ export function Home(){
                </div>
                <div className="col">
                <div style={{fontWeight:'bold', fontSize:"25px",color:"white"}}>Hard Skills</div>
-                <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+                <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                 <div className="mt-3">
                 <div>Ciência da Computação</div>
                 </div>
                </div>
                <div className="col">
                 <div style={{fontWeight:'bold', fontSize:"25px",color:"white"}}>Soft Skills</div>
-                <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+                <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                 <div className="mt-3">
                  <div>Criatividade</div>
                  <div>Proatividade</div>
@@ -92,7 +92,7 @@ export function Home(){
         <div className="row p-3 mx-0 mt-5">
           <div className="col align-self-center">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Comunicação RealTime</div>
-              <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+              <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                
                <div className="mt-3">
                <div>Com o passar do tempo eu sempre tive curiosidade em saber como funcionava a tecnologia <b>RealTime</b>, foi então que surgiu a necessidade dos meus projetos onde foi utilizado o protocolo de <b>WebSockets</b> onde usei algumas interações e estou utilizando nesse momento.</div>
@@ -124,7 +124,7 @@ export function Home(){
 
           <div className="col align-self-center">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Armazenamento em Nuvem</div>
-              <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+              <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                
                <div className="mt-3">
                <p>Atualmente as grandes empresa estão migrando seus dados para nuvem. Assim dispensando os custos de servidores locais e manutenção.</p>
@@ -147,7 +147,7 @@ export function Home(){
         <div className="row p-3 mx-0 my-5">
           <div className="col align-self-center">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Sistemas de Pagamentos</div>
-              <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+              <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
                
                <div className="mt-3">
                <p>Trabalhar com pagamentos no inicio parecia algo muito assustador, pois eu sempre tinha duvidas de onde irei salvar informações com dados de cartões tão delicados foi ai que conheci a IUGU, até visitei a empresa em São Paulo.</p>
@@ -172,7 +172,7 @@ export function Home(){
         <div className="row p-3 mx-0 my-5">
           <div className="col">
               <div style={{fontWeight:'bold', fontSize:"25px", color:"white"}}>Contato</div>
-              <div style={{background:"#5cadc0", height:"5px", width:"25px", borderRadius:10}} ></div>
+              <div style={{background:"#00c742", height:"5px", width:"25px", borderRadius:10}} ></div>
               <div className="mt-3">
                <div>Email: them4sterdeveloper@outlook.com</div>
                <div>Phone: +55 11 975909929</div>
@@ -186,5 +186,5 @@ export function Home(){
 
 
 
-       </>) 
+              </div> </div>) 
 }
