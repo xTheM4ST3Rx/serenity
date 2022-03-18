@@ -81,6 +81,7 @@ export function Portfolio(){
                 <div className="mt-3">
                  <div>Criatividade</div>
                  <div>Proatividade</div>
+                 <div>Adaptabilidade</div>
                  <div>Inteligência emocional</div>
                  <div>Colaboração</div>
                  <div>Pensamento Crítico</div>
