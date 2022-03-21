@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 
 import Profile from "../../resources/profile.jpg";
 import Nuvem from "../../resources/nuvem.jpg";
@@ -5,9 +6,45 @@ import Wssocket from "../../resources/wss.png";
 import DiscordLogo from "../../resources/discord.svg";
 
 
+
 export function Portfolio(){
+
+useEffect(() =>{
+
+  
+  const scroller = document.getElementById("scroller")
+  scroller?.addEventListener('scroll', function(){
+
+
+    var bg = document.getElementById("bg") as HTMLElement;
+    var moon = document.getElementById("moon") as HTMLElement;
+    var mountain = document.getElementById("mountain") as HTMLElement;
+    var road = document.getElementById("road") as HTMLElement;
+    
+     var value = scroller.scrollTop;
+
+      
+      bg.style.top = value*0.5 + 'px';
+      moon.style.left = -value*0.5 + 'px';
+      mountain.style.top = -value*0.15+'px';
+      road.style.top = value * 0.15 +'px';
+      
+  })
+},[])
+
+
    return(
     <div>
+
+
+        <section>
+            <img src="https://i.postimg.cc/C5qnCdY9/bg.jpg" id="bg"/>
+            <img src="https://i.postimg.cc/F1XdTmHz/moon.png" id="moon"/>
+            <img src="https://i.postimg.cc/ZKNM7hcS/mountain.png" id="mountain"/>
+            <img src="https://i.postimg.cc/qvdZWZbC/road.png" id="road"/>
+            
+        </section>
+
     
        <div className="container my-10">
        <div className="row p-3 mx-0 my-5 l text-center">

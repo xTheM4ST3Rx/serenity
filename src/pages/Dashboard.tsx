@@ -10,7 +10,7 @@ return(
       <div className="col-auto p-0">
           <Sidebar/>
      </div>
-     <div className="col h-100-scroller">
+     <div id="scroller" className="col h-100-scroller p-0">
          <Portfolio/>
      </div>
 </div>)
