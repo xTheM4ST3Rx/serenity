@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "postinstall": "npm run tsc",
     "preview": "vite preview",
     "heroku-postbuild": "npm install && npm run build"
     
