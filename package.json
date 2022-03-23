@@ -9,8 +9,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
-    "postbuild": "npm install && npm run build"
+    "build": "tsc && vite build",
+    "heroku-postbuild": "npm install && npm run build"
     
   },
   "dependencies": {
