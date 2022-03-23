@@ -7,10 +7,8 @@
     "npm": ">=8.1.4"
   },
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "heroku-postbuild": "npm install && npm run build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^17.0.2",
