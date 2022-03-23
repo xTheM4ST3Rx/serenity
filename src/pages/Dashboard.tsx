@@ -8,7 +8,7 @@ export function Dashboard(){
 return(
  <div className="row">
       <div className="col-auto p-0">
-          <Sidebar/>
+          {/*<Sidebar/>*/}
      </div>
      <div id="scroller" className="col h-100-scroller p-0">
          <Portfolio/>
