@@ -1,8 +1,8 @@
 import { Sidebar } from "../components/Sidebar";
-import { Portfolio } from "./dash/Portfolio";
-import { Layout } from "./dash/Layout";
+import Portfolio from "./dash/Portfolio";
+import Layout from "./dash/Layout";
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div className="row">
       <div className="col-auto p-0">{/*<Sidebar/>*/}</div>

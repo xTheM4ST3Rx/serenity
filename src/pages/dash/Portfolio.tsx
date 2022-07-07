@@ -9,7 +9,7 @@ import bg2 from "../../resources/bg2.png";
 import bg3 from "../../resources/bg3.png";
 import bg4 from "../../resources/bg4.png";
 
-export function Portfolio() {
+export default function Portfolio() {
   useEffect(() => {
     const scroller = document.getElementById("scroller");
     scroller?.addEventListener("scroll", function () {
