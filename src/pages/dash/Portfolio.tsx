@@ -4,6 +4,10 @@ import Profile from "../../resources/profile.jpg";
 import Nuvem from "../../resources/nuvem.jpg";
 import Wssocket from "../../resources/wss.png";
 import DiscordLogo from "../../resources/discord.svg";
+import bg1 from "../../resources/bg1.jpg";
+import bg2 from "../../resources/bg2.png";
+import bg3 from "../../resources/bg3.png";
+import bg4 from "../../resources/bg4.png";
 
 export function Portfolio() {
   useEffect(() => {
@@ -26,10 +30,10 @@ export function Portfolio() {
   return (
     <div>
       <section>
-        <img src="https://i.postimg.cc/C5qnCdY9/bg.jpg" id="bg" />
-        <img src="https://i.postimg.cc/F1XdTmHz/moon.png" id="moon" />
-        <img src="https://i.postimg.cc/ZKNM7hcS/mountain.png" id="mountain" />
-        <img src="https://i.postimg.cc/qvdZWZbC/road.png" id="road" />
+        <img src={bg1} id="bg" />
+        <img src={bg2} id="moon" />
+        <img src={bg3} id="mountain" />
+        <img src={bg4} id="road" />
       </section>
 
       <div className="container my-10">
