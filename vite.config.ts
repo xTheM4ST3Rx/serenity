@@ -7,8 +7,15 @@ export default defineConfig({
   base: "/Serenity/",
   server: {
     host: true,
+    port: 3000,
+  },
+  preview: {
+    host: true,
+    port: 3001,
   },
   build: {
     sourcemap: true,
   },
 });
+
+//Default port 4173
