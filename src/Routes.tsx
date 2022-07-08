@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 
 export default function AppRoutes() {
   return (
-    <Router basename="/serenity">
+    <Router>
       <Routes>
         <Route path="/" element={<Dashboard />} />
       </Routes>
