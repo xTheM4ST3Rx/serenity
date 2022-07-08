@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/xTheM4ST3Rx/serenity.git"
   },
-  "homepage": "https://xthem4st3rx.github.io/serenity",
+  "homepage": "https://xthem4st3rx.github.io/serenity/",
   "engines": {
     "node": ">=16.14.2",
     "npm": ">=8.1.4"
@@ -15,7 +15,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^17.0.2",
