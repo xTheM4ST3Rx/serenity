@@ -1,6 +1,6 @@
-import { Sidebar } from "../components/Sidebar";
+//import { Sidebar } from "../components/Sidebar";
 import Portfolio from "./dash/Portfolio";
-import Layout from "./dash/Layout";
+//import Layout from "./dash/Layout";
 
 export default function Dashboard() {
   return (
