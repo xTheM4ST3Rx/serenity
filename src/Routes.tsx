@@ -6,7 +6,7 @@ export default function AppRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/serenity" element={<Dashboard />} />
       </Routes>
     </Router>
   );
